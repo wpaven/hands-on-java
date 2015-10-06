@@ -11,7 +11,8 @@ MarkLogic.
 2. Clone the [Geophoto repository][geophoto]. 
 3. Follow Geophoto's setup instructions, including data import
 4. clone the hands-on-java repo and import into your favorite IDE
-
+	-remember to reference the [Java Client API][javaclient] in your project
+     
 ## Introduction
 
 MarkLogic is a document- and triple-store database. One of the features in
@@ -54,3 +55,4 @@ Trace the steps of editing the title of an image.
 - routes.js: update -> apiupdate -> updateDocument (read, edit, write)
 
 [geophoto]: https://github.com/marklogic/Geophot
+[javaclient]: http://developer.marklogic.com/products/java
