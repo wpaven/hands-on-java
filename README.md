@@ -10,7 +10,7 @@ MarkLogic.
 1. Install MarkLogic 8.
 2. Clone the [Geophoto repository][geophoto]. 
 3. Follow Geophoto's setup instructions, including data import
-4. clone the hands-on-java repo and import into your favorite IDE
+4. Clone the hands-on-java repo and import into your favorite IDE
 	-remember to reference the [Java Client API][javaclient] in your project
      
 ## Introduction
