@@ -54,5 +54,5 @@ Trace the steps of editing the title of an image.
 - POST /api/image/update/:id/:update
 - routes.js: update -> apiupdate -> updateDocument (read, edit, write)
 
-[geophoto]: https://github.com/marklogic/Geophot
+[geophoto]: https://github.com/marklogic/Geophoto
 [javaclient]: http://developer.marklogic.com/products/java
