@@ -40,52 +40,9 @@ public class Unit01_Exercises {
 				
 		// run tasks
 		runTask1(client);
-		runTask2(client);
-
+		
 		// release the client
 		client.release();
 	}
-	public static void runTask1(DatabaseClient client) 
-	throws IOException {
-		// create a manager for XML documents
-		JSONDocumentManager docMgr = client.newJSONDocumentManager();
 
-		// create an identifier for the document
-		String docId = "/image/03.JPG.json";
-		
-		//read the document as JSON strongly typed
-		JacksonHandle readHandle = new JacksonHandle();
-		docMgr.read(docId, readHandle);
-		JsonNode readDocument = readHandle.get();
-
-		System.out.println("\nRead "+docId+" with content: \n"+ readDocument); 
-		
-		Iterator<Map.Entry<String,JsonNode>> fieldsIter = readDocument.fields();
-	    while (fieldsIter.hasNext()){
-	      Map.Entry myEntry = fieldsIter.next();
-	     // System.out.println("key: "+ myEntry.getKey());
-	      
-	      if(myEntry.getKey().equals("model"))
-	      {
-	    	  System.out.println("\nModel : "+ myEntry.getValue() );
-	      }
-	      
-	         
-	    }
-
-	}
-	
-	public static void runTask2(DatabaseClient client) 
-	throws IOException {
-		
-		//create manager for Binary Documents
-		BinaryDocumentManager docMgr = client.newBinaryDocumentManager();
-		
-		// create an identifier for the document
-		String docId = "/binary/mlfavicon-2.png";
-		docMgr.delete(docId);
-		
-		System.out.println("\nDeleted "+docId+"  from the database.");
-		
-	}
 }
