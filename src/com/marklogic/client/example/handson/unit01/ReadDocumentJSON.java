@@ -72,7 +72,7 @@ public class ReadDocumentJSON {
 	
 	public static void runStrongTyped(DatabaseClient client) 
 	throws IOException {
-		// create a manager for XML documents
+		// create a manager for JSON documents
 		JSONDocumentManager docMgr = client.newJSONDocumentManager();
 
 		// create an identifier for the document
