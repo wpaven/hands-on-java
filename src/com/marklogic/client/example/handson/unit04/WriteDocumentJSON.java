@@ -7,13 +7,12 @@ import java.io.InputStream;
 import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
 import com.marklogic.client.document.JSONDocumentManager;
-import com.marklogic.client.document.XMLDocumentManager;
 import com.marklogic.client.example.handson.Util;
 import com.marklogic.client.example.handson.Util.ExampleProperties;
 import com.marklogic.client.io.InputStreamHandle;
 
 /**
- *  WriteDocumentJSON illustrates how to write content to a database document.
+ *  WriteDocumentJSON illustrates how to write JSON content to a database document.
  */
 public class WriteDocumentJSON {
 	

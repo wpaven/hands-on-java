@@ -8,14 +8,14 @@ import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
 import com.marklogic.client.document.DocumentWriteSet;
 import com.marklogic.client.document.GenericDocumentManager;
-import com.marklogic.client.document.JSONDocumentManager;
 import com.marklogic.client.example.handson.Util;
 import com.marklogic.client.example.handson.Util.ExampleProperties;
-import com.marklogic.client.example.handson.unit01.StreamReadWrite;
 import com.marklogic.client.io.FileHandle;
 import com.marklogic.client.io.InputStreamHandle;
-import com.marklogic.client.io.JacksonHandle;
-
+/**
+ *  WriteMultiDocument illustrates how to write a mixed document set to the database
+ *  For multi-document write, use DocumentWriteSet
+ */
 public class WriteMultiDocument {
 	
 	public static void main(String[] args) throws IOException {
@@ -54,6 +54,8 @@ public class WriteMultiDocument {
 	                         + File.separator + binaryFile)).withMimetype("image/jpeg");
 
 		// create a generic manager for mixed type documents
+		//When you use GenericDocumentManager, you must either use handles that 
+		//imply a specific document or content type, or explicitly set it
 		GenericDocumentManager docMgr = client.newDocumentManager();
 
 		// create identifiers for the documents
