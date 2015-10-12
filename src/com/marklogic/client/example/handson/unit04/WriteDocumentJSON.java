@@ -30,9 +30,9 @@ public class WriteDocumentJSON {
 					props.authType);
 
 			// use either shortcut or strong typed IO
-			runShortcut(client);
+			//runShortcut(client);
 			runStrongTyped(client);
-			tearDownExample(client);
+			//tearDownExample(client);
 
 			// release the client
 			client.release();

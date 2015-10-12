@@ -23,7 +23,7 @@ public class WriteMultiDocument {
 	}
 
 	public static void run(ExampleProperties props) throws IOException {
-		System.out.println("example: "+WriteDocumentJSON.class.getName());
+		System.out.println("example: "+WriteMultiDocument.class.getName());
 
 		// create the client
 		DatabaseClient client = DatabaseClientFactory.newClient(

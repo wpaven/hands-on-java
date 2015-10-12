@@ -12,7 +12,7 @@ import com.marklogic.client.example.handson.Util.ExampleProperties;
 import com.marklogic.client.io.marker.DocumentPatchHandle;
 
 /**
- *  AddCollection illustrates how to partially update document content
+ *  UpdateDocument illustrates how to partially update document content
  */
 public class UpdateDocument {
 	
@@ -22,7 +22,7 @@ public class UpdateDocument {
 	}
 
 	public static void run(ExampleProperties props) throws IOException {
-		System.out.println("example: "+AddCollection.class.getName());
+		System.out.println("example: "+UpdateDocument.class.getName());
 
 		// create the client
 		DatabaseClient client = DatabaseClientFactory.newClient(
